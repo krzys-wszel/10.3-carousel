@@ -1,0 +1,2 @@
+*{box-sizing:border-box}body h1{color:green;font-weight:bold}#carousel ul{list-style:none;width:2000px}#carousel ul li{display:inline-block;width:2000px;float:left;list-style:none}#carousel{width:400px;height:300px;border:1px solid black;overflow:hidden;box-shadow:10px 10px 5px 0px rgba(0,0,0,0.75)}#directions{text-align:center;color:green}.left-button,.right-button{display:inline-block;cursor:pointer;margin:10px}
+/*# sourceMappingURL=style.css.map */
