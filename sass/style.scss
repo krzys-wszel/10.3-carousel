@@ -1,29 +1,30 @@
-* {
-    box-sizing: border-box;
-}
-
-body h1 {
+h1 {
     color: green;
-    font-weight: bold;
+    
 }
-#carousel ul {
-    list-style: none;
-    width: 2000px;
-}
-
-#carousel ul li {
-    display: inline-block;
-    width: 2000px;
-    float: left;
-    list-style: none;
-   }
-
-#carousel {
+.carousel-global {
+    margin: 0;
     width: 400px;
     height: 300px;
-    border: 1px solid black;
     overflow: hidden;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    padding: 0;
+}
+
+#carousel {
+        @extend .carousel-global;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    margin: 0 auto;
+    ul {
+        @extend .carousel-global;
+        width:2000px;
+        display: block;
+    }
+    li {
+        @extend .carousel-global;
+        list-style: none;
+        float: left;
+        display: inline;
+    }
 }
 
 #directions {
