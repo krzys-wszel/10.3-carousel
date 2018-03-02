@@ -1,2 +1,47 @@
-h1{color:green}.carousel-global,#carousel,#carousel ul,#carousel li{margin:0;width:400px;height:300px;overflow:hidden;padding:0}#carousel{box-shadow:10px 10px 5px 0px rgba(0,0,0,0.75);margin:0 auto}#carousel ul{width:2000px;display:block}#carousel li{list-style:none;float:left;display:inline}#directions{text-align:center;color:green}.left-button,.right-button{display:inline-block;cursor:pointer;margin:10px}
-/*# sourceMappingURL=style.css.map */
+
+}
+h1 {
+    color: green
+}
+
+.carousel-global,
+#carousel,
+#carousel ul,#carousel li {
+    margin: 0;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    padding: 0
+        
+}
+ul {
+    margin-left: -400px;
+}
+#carousel {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    margin: 0 auto
+}
+
+#carousel ul {
+    width: 2000px;
+    display: block
+}
+
+#carousel li {
+    list-style: none;
+    float: left;
+    display: inline
+}
+
+#directions {
+    text-align: center;
+    color: green
+}
+
+.left-button,
+.right-button {
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px
+}

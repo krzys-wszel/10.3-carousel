@@ -5,8 +5,13 @@ $(function () {
 
     function changeSlide() {
         carouselList.animate({
-            'marginLeft': -400
+            'marginLeft': -800
         }, 1000, moveFirstSlide);
+    }
+     function changeSlideRight() {
+        carouselList.animate({
+            'marginLeft': 0
+        }, 1000, moveLastSlide);
     }
 
     function moveFirstSlide() {
@@ -14,7 +19,7 @@ $(function () {
         var lastItem = carouselList.find("li:last");
         lastItem.after(firstItem);
         carouselList.css({
-            marginLeft: 0
+            marginLeft: -400
         });
     }
 
@@ -23,11 +28,11 @@ $(function () {
         var lastItem = carouselList.find('li:last');
         firstItem.before(lastItem);
         carouselList.css({
-            marginRight: '0px'
+            marginLeft: -400
         });
     };
 
-    $(".right-button").on('click', moveLastSlide);
-    $(".left-button").on('click', moveLastSlide);
+    $(".right-button").on('click', changeSlide);
+    $(".left-button").on('click', changeSlideRight);
 
 });

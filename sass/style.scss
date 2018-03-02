@@ -18,6 +18,7 @@ h1 {
         @extend .carousel-global;
         width:2000px;
         display: block;
+        margin-left: -400px
     }
     li {
         @extend .carousel-global;
